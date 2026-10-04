@@ -17,20 +17,29 @@ Products: `embedya/`, `traxcope/`
 
 ## Naming convention
 
-`{product}-{type}-{variant}-{color}.{ext}`
+`{product}-{type}[-{layout}]-{style}.{ext}`
 
 - lowercase, kebab-case, no spaces, ASCII only
-- `type`: `logo` | `icon`
-- `variant`: `horizontal` | `stacked` (logos only)
-- `color`: `color` | `white` | `black`
+- `type`: `icon` (symbol only) | `logo` (symbol + wordmark)
+- `layout` (logos only): `horizontal` (tight crop) | `square` (centered on a square canvas)
+- `style`:
+  - `color` — transparent background, for **light** backgrounds
+  - `white` — transparent background, for **dark** backgrounds
+  - `light-bg` — includes a solid light background
+  - `dark-bg` — includes a solid dark background
 - **Never put versions or dates in file names.** Use git tags (`v1`, `v2`, …) for versioning.
 
-Examples:
+Current Traxcope files (`traxcope/logo/`):
 
-- `traxcope/logo/traxcope-logo-horizontal-color.svg`
-- `traxcope/logo/traxcope-logo-horizontal-white.svg`
-- `traxcope/logo/traxcope-icon-color.svg`
-- `traxcope/favicon/favicon.ico`
+| File | Use |
+|---|---|
+| `traxcope-icon-color.svg` | Icon on light backgrounds |
+| `traxcope-icon-white.svg` | Icon on dark backgrounds |
+| `traxcope-icon-light-bg.svg` / `-dark-bg.svg` | Icon with solid background (avatars, app tiles) |
+| `traxcope-logo-horizontal-color.svg` | Main logo on light backgrounds |
+| `traxcope-logo-horizontal-white.svg` | Main logo on dark backgrounds |
+| `traxcope-logo-horizontal-light-bg.svg` / `-dark-bg.svg` | Main logo with solid background |
+| `traxcope-logo-square-*.svg` | Same styles, square canvas (social, previews) |
 
 ## File requirements
 
