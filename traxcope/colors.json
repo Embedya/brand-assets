@@ -8,6 +8,9 @@
   },
   "notes": "Icon SVGs currently use navy #0D233B and orange #F0651F; logo SVGs use the values above. To be unified.",
   "cryptlex": {
-    "hue": 23
+    "hue": 47,
+    "hueModel": "OKLCH (orange #EA6E23)",
+    "logo": "traxcope/logo/traxcope-logo-horizontal-white.svg",
+    "favicon": "traxcope/favicon/favicon.ico"
   }
 }
