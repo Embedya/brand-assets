@@ -1,0 +1,13 @@
+{
+  "primary": {
+    "navy": "#08233D",
+    "orange": "#EA6E23"
+  },
+  "neutral": {
+    "white": "#FFFFFF"
+  },
+  "notes": "Icon SVGs currently use navy #0D233B and orange #F0651F; logo SVGs use the values above. To be unified.",
+  "cryptlex": {
+    "hue": 23
+  }
+}
